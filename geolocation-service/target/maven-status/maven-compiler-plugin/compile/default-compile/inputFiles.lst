@@ -1,0 +1,6 @@
+/home/jrioseco/geolocation-app/geolocation-service/src/main/java/com/geolocation/service/LocationService.java
+/home/jrioseco/geolocation-app/geolocation-service/src/main/java/com/geolocation/controller/LocationController.java
+/home/jrioseco/geolocation-app/geolocation-service/src/main/java/com/geolocation/GeolocationApplication.java
+/home/jrioseco/geolocation-app/geolocation-service/src/main/java/com/geolocation/config/WebSocketConfig.java
+/home/jrioseco/geolocation-app/geolocation-service/src/main/java/com/geolocation/websocket/LocationWebSocketHandler.java
+/home/jrioseco/geolocation-app/geolocation-service/src/main/java/com/geolocation/config/RabbitMQConfig.java

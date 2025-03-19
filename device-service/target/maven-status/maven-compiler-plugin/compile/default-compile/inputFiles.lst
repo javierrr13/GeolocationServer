@@ -1,0 +1,5 @@
+/home/jrioseco/geolocation-app/device-service/src/main/java/com/device/config/RabbitMQConfig.java
+/home/jrioseco/geolocation-app/device-service/src/main/java/com/device/service/DeviceService.java
+/home/jrioseco/geolocation-app/device-service/src/main/java/com/device/controller/DeviceController.java
+/home/jrioseco/geolocation-app/device-service/src/main/java/com/device/model/Device.java
+/home/jrioseco/geolocation-app/device-service/src/main/java/com/device/DeviceApplication.java

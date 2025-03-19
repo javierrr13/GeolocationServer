@@ -1,0 +1,61 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  geolocation-service:
+    build:
+      context: .
+      dockerfile: geolocation-service/Dockerfile
+    ports:
+      - "8081:8081"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      mongodb:
+        condition: service_started
+    restart: on-failure
+    environment:
+      - SPRING_AMQP_DESERIALIZATION_TRUST_ALL=true
+
+  auth-service:
+    build:
+      context: ./auth-service
+    ports:
+      - "8082:8082"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      mongodb:
+        condition: service_started
+    restart: on-failure
+
+  device-service:
+    build:
+      context: .
+      dockerfile: device-service/Dockerfile
+    ports:
+      - "8083:8083"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      mongodb:
+        condition: service_started
+    restart: on-failure
+
+volumes:
+  mongo-data:

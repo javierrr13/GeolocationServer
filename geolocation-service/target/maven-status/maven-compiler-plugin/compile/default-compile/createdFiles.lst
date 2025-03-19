@@ -1,0 +1,6 @@
+com/geolocation/service/LocationService.class
+com/geolocation/controller/LocationController.class
+com/geolocation/config/RabbitMQConfig.class
+com/geolocation/websocket/LocationWebSocketHandler.class
+com/geolocation/GeolocationApplication.class
+com/geolocation/config/WebSocketConfig.class

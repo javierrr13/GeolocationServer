@@ -1,0 +1,5 @@
+com/auth/AuthApplication.class
+com/auth/controller/AuthController.class
+com/auth/config/RabbitMQConfig.class
+com/auth/model/DevicePermission.class
+com/auth/service/AuthService.class

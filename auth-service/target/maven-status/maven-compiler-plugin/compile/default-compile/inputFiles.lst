@@ -1,0 +1,5 @@
+/home/jrioseco/geolocation-app/auth-service/src/main/java/com/auth/controller/AuthController.java
+/home/jrioseco/geolocation-app/auth-service/src/main/java/com/auth/service/AuthService.java
+/home/jrioseco/geolocation-app/auth-service/src/main/java/com/auth/model/DevicePermission.java
+/home/jrioseco/geolocation-app/auth-service/src/main/java/com/auth/config/RabbitMQConfig.java
+/home/jrioseco/geolocation-app/auth-service/src/main/java/com/auth/AuthApplication.java

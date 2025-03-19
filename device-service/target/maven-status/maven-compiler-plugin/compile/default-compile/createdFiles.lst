@@ -1,0 +1,5 @@
+com/device/service/DeviceService.class
+com/device/DeviceApplication.class
+com/device/model/Device.class
+com/device/controller/DeviceController.class
+com/device/config/RabbitMQConfig.class
