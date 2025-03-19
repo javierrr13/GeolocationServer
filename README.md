@@ -60,8 +60,8 @@ La aplicación se compone de tres microservicios y un módulo compartido:
    git clone https://github.com/<tu-usuario>/geolocation-app.git
    cd geolocation-app
 2. **Construir el Proyecto**:
-```bash
-mvn clean install
-3.**Levantar los Servicios con Docker**:
-```bash
-sudo docker-compose up --build   
+   ``bash
+   mvn clean install
+3. **Levantar el proyecto**       
+   ```bash
+   sudo docker-compose up --build   
